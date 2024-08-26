@@ -1,15 +1,8 @@
-let userMinNumb = parseInt(prompt('Введіть мінімальне число','1'))
-let userMaxNumb = parseInt(prompt('Введіть максимальне число','10'))
+let min = 35
+let max = 87
 
-let oddNumb = ''
-let sum = 0
-
-for (let i = userMinNumb; i < userMaxNumb; i++) {
-  if (i % 2 !== 0) {
+for (let i = min; i <= max; i++){
+  if (i % 7 === 1 || i % 7 === 2 || i % 7 === 5) {
     document.write(`${i}, `)
-    oddNumb += i
-    sum += i
   }
 }
-
-document.write(`<br>Сума непарних чисел = ${sum}`)
